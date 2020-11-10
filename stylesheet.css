@@ -1,0 +1,161 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.column {
+  border: solid 1px white;
+}
+
+body {
+  background-color: #282828;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* This is better for small screens, once min() is better supported */
+  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+  grid-gap: 1rem;
+  /* This is the standardized property now, but has slightly less support */
+  /* gap: 1rem */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 4px 4px;
+  grid-template-areas: ". .";
+  margin-top: 70px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.search {
+  justify-content: space-between;
+  float: center;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.icons {
+  color: white;
+  display: inline-block;
+}
+
+.logo {
+  width: 100px;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+.hashtags {
+  color: #3ea6ff;
+  font-size: 1.2rem;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.main-text {
+  color: #aaa;
+  font-size: 1.4rem;
+}
+
+.video-preview {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+}
+
+.up-next-title {
+  color: #fff;
+  font-size: 14px;
+}
+
+.up-next-text {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.up-next-img {
+  margin: auto;
+  width: 200px;
+}
+
+.buy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  border: solid 1px white;
+  grid-template-areas:
+    ". item-c"
+    ". item-c";
+}
+
+.item-c {
+  grid-area: item-c;
+}
+
+.buy-button {
+  width: 100%;
+  height: 100%;
+}
+
+.top-menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+.left-nav {
+  display: flex;
+  align-items: flex-start;
+}
+
+.center-nav {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.video-info {
+  display: flex;
+}
